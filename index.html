@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audit Checklist</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label { display: block; margin: 4px 0; }
+    input[type="text"] { padding: 6px; margin: 5px 0; width: 250px; }
+    button { margin-top: 20px; padding: 10px 15px; }
+    pre { background: #f4f4f4; padding: 10px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+<h2>Audit Checklist</h2>
+
+<!-- Site Details -->
+<div>
+  <label>Site ID:</label>
+  <input type="text" id="siteId" placeholder="Enter Site ID">
+
+  <label>Site Name:</label>
+  <input type="text" id="siteName" placeholder="Enter Site Name">
+</div>
+
+<hr>
+
+<div id="checklist"></div>
+
+<button onclick="generate()">Generate</button>
+<button onclick="copyText()">Copy</button>
+
+<h3>Output</h3>
+<pre id="output"></pre>
+
+<script>
+const data = [
+"(ELEC-01) Equipment Status- 1) Faulty Equipment, 2) Faulty component, 3) Damaged 4) Dent 5) Cell leakage (OEM for 1,2 and TSP for 3,4,5,)"
+"(ELEC-02) Equipment position not placed as per approved layout."
+"(ELEC-03) Cable: 1) Make, 2) Size, 3) Grade, 4) St. Compliance"
+"(ELEC-04) Cable termination : 1) Terminals without lugs, 2) Terminals lug crimping, 3) Terminals without Heat shrink sleeves, 4) Terminals tightness"
+"(ELEC-05) Cable Routings :1)Underground trench depth 600mm, 2) Cable routing protections-HDPE pipe/flexible pipe"
+"(ELEC-06) Equipment earthing as per earthing scheme: 1) All Equipment bodies earthing, 2) Cable sizes as per specification, 3) All terminations tightened, 4) Terminal crimped"
+"(ELEC-07) Earthing strips sizes :1)EGB/IGB with 25x6mm GI, 3)Tower/Pole with 25x6mm GI, 4) LA with 25x3mm GI, 5) All other metallic body with 25x3mm GI strip, 6) Shelter/Cage/Shed/fence/EB panel with 25x3mm GI strip"
+"(ELEC-08) Combined Earthing value <2 Ohms"
+"(ELEC-09) Earthing scheme of site as per GL" 
+"(ELEC-10) EGB / IGB interconnection not done in indoor sites"
+"(ELEC-11) Non PDI equipment installed at site"
+"(ELEC-12) EGB / IGB interconnection not done in indoor sites"
+"(ELEC-13) Non PDI equipment installed at site"
+"(ELEC-14) False / wrong commission report."
+"(ELEC-15) OEM Comm report not available: 1) BB, 2) SMPS, 3) SPS, 4) DG, 5) AC"
+"(ELEC-16) MCB: 1) Make,2) Ratings, 3) St. Compliance"
+"(ELEC-17) MCCB: 1) Make,2) Ratings, 3) St. Compliance, 4)Spreader link for MCCB"
+"(ELEC-18) DCDB: 1) Configuration, 2) St. Compliance"
+"(ELEC-19) ACDB: 1) Configuration, 2) St. Compliance"
+"(ELEC-20) Equipment functionality- 1) No Output, 2) Display not working, 3) Indications not working (OEM)"
+"(ELEC-21) Equipment safety features- 1) DG safety, 2) F&S safety, 3) HRT safety (OEM)"
+"(ELEC-22) Equipment Automation and alarm (OEM)"
+"(ELEC-23) BB : 1) Cell voltage variation -0.05V, 2) Cell terminal torque, 3) TC cable not available, 4) Interconnecting strip (OEM for 1,2, 4 & TSP for 3,)"
+"(ELEC-24) Parameter settings in SMPS, SPS etc (OEM)"
+"(ELEC-25) Class B/Class B+C SPD installation"
+"(ELEC-26) All OD cabinet cooling system functional (OEM)"
+"(ELEC-27) Aviation lamp functionality as applicable"
+"(ELEC-29) Power socket installed as per location and IP rating"
+"(ELEC-29) All OD distribution boards including Meter Box IP rating"
+"(ELEC-30) Meter box installation: 1) Grouting of Meter Box stand, 2) No mounting over fence/cage/Tower legs/Tower foundation"
+"(ELEC-31) Cable tray installation: 1)as par layout/ slop not towards BTS / Cable tray defect free / rusting or any galvanization issue"
+"(ELEC-32) Equipment mounting poles grouting: 1) SP/SPS poles, 2) SM Pole"
+"(ELEC-33) Galvanizing of : GI strips / IGB / EGB < 85 microns"
+"(ELEC-34) Interconnections of tower legs using 25x6mm GI strip"
+"(ELEC-35) DG Earthing: 1) GRID around DG using 25x3mm GI strip, 2) DG canopy earthing at DG GRID, 3) DG Grid with Site earth GRID using 25x6mm GI strip, 4) DG neutral as per GL"
+"(ELEC-36) Separation of active and passive earthing strips not done"
+"(ELEC-37) Earthing not isolated from building metallic structures"
+"(ELEC-38) Anti-static earthing of shelter not complied"
+"(ELEC-39) Cable tray earthing not done"
+"(ELEC-40) Earth strip joints: 1) Welding not proper, 2) Nut-bolts not used, 3) Overlapping not as per specification, 4) Loose nut-bolts"
+"(ELEC-41) GI strip routings:1) Underground trench of 600mm, 2) Surface routing using SS saddle"
+"(ELEC-42) LA GI strip routing using insulator (RTT,GBT,GBM)"
+"(ELEC-43) Equipment mounting poles grounding: 1) SP/SPS poles, 2) SM Pole, 3) LT EB poles, 4) Earthing using 25x3mm GI strip"
+"(F46) Back-filling not done as per guideline"
+"(T34) Ladder fitment not as per drawing and any damage / twisting / bending / location as per layout"
+"(T35) Cable tray fitment not as per drawing and any damage / twisting / bending (TP/EP)"
+"(PM 28) Site not ready for audit"
+];
+
+const container = document.getElementById("checklist");
+
+data.forEach(item => {
+  let label = document.createElement("label");
+  label.innerHTML = `<input type="checkbox" value="${item}"> ${item}`;
+  container.appendChild(label);
+});
+
+function generate() {
+  let siteId = document.getElementById("siteId").value || "";
+  let siteName = document.getElementById("siteName").value || "";
+
+  let today = new Date();
+  let date = today.toLocaleDateString('en-GB'); // DD/MM/YYYY
+
+  let selected = [];
+  document.querySelectorAll('input:checked').forEach(el => {
+    selected.push(el.value);
+  });
+
+  let output = "";
+
+  output += "Date :- " + date + "\n";
+
+  if(siteId) output += "Site ID :- " + siteId + "\n";
+  if(siteName) output += "Site Name :- " + siteName + "\n\n";
+
+  output += "Punch point (With Defect Code):-\n";
+
+  selected.forEach((item, i) => {
+    output += (i+1) + ". " + item + "\n";
+  });
+
+  document.getElementById("output").textContent = output;
+}
+
+function copyText() {
+  let text = document.getElementById("output").textContent;
+  navigator.clipboard.writeText(text);
+  alert("Copied");
+}
+</script>
+
+</body>
+</html>
