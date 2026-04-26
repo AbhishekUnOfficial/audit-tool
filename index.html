@@ -213,8 +213,10 @@ function generate() {
   output += "Site ID :- " + (siteId.value || "") + "\n";
   output += "Site Name :- " + (siteName.value || "") + "\n\n";
 
+  if (selected.size > 0) {
   output += "Punch point (With Defect Code):-\n";
   [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
+}
 
   if (rectified.size > 0) {
   output += "\nRectified Punch point:-\n";
