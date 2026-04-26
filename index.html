@@ -164,39 +164,43 @@ function render(list) {
     let label = document.createElement("label");
 
     label.innerHTML = `
-      <input type="checkbox" ${selected.has(item) ? "checked" : ""} data-type="main" value="${item}">
-      <input type="checkbox" ${rectified.has(item) ? "checked" : ""} data-type="rect" value="${item}">
+      <input type="checkbox" class="main" ${selected.has(item) ? "checked" : ""}>
+      <input type="checkbox" class="rect" ${rectified.has(item) ? "checked" : ""}>
       ${item}
     `;
 
-    let inputs = label.querySelectorAll("input");
+    let main = label.querySelector(".main");
+    let rect = label.querySelector(".rect");
 
-    inputs[0].addEventListener("change", e => {
-  if (e.target.checked) {
-    selected.add(item);
-    rectified.delete(item); // ❌ remove rectified
-    inputs[1].checked = false; // uncheck rectified UI
-  } else {
-    selected.delete(item);
-  }
-  save();
-});
+    // Punch checkbox
+    main.addEventListener("change", () => {
+      if (main.checked) {
+        selected.add(item);
+        rectified.delete(item);
+        rect.checked = false;
+      } else {
+        selected.delete(item);
+      }
+      save();
+    });
 
-inputs[1].addEventListener("change", e => {
-  if (e.target.checked) {
-    rectified.add(item);
-    selected.delete(item); // ❌ remove punch
-    inputs[0].checked = false; // uncheck punch UI
-  } else {
-    rectified.delete(item);
-  }
-  save();
-});
+    // Rectified checkbox
+    rect.addEventListener("change", () => {
+      if (rect.checked) {
+        rectified.add(item);
+        selected.delete(item);
+        main.checked = false;
+      } else {
+        rectified.delete(item);
+      }
+      save();
+    });
 
     container.appendChild(label);
   });
 }
 
+  
 function filterList() {
   let q = document.getElementById("search").value.toLowerCase();
   render(data.filter(x => x.toLowerCase().includes(q)));
