@@ -226,23 +226,23 @@ function generate() {
   let output = "Date :- " + date + "\n";
   output += "Site ID :- " + (siteId.value || "") + "\n";
   output += "Site Name :- " + (siteName.value || "") + "\n\n";
-  
 
-if (selected.size > 0) {
-  output += "Punch points (With Defect Code):-\n";
-  [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
-}
+  if (selected.size > 0) {
+    output += "Punch points (With Defect Code):-\n";
+    [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
+  }
 
-if (validRectified.length > 0) {
-  output += "\nRectified Punch points (With Defect Code):-\n";
-  validRectified.forEach((x,i)=> output += (i+1)+". "+x+"\n");
-}
+  if (rectified.size > 0) {
+    output += "\nRectified Punch points (With Defect Code):-\n";
+    [...rectified].forEach((x,i)=> output += (i+1)+". "+x+"\n");
+  }
 
   document.getElementById("output").textContent = output;
 }
 
 function copyText() {
-  navigator.clipboard.writeText(output.textContent);
+  let text = document.getElementById("output").textContent;
+  navigator.clipboard.writeText(text);
   alert("Copied");
 }
 
