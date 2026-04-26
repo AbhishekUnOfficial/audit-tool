@@ -172,16 +172,26 @@ function render(list) {
     let inputs = label.querySelectorAll("input");
 
     inputs[0].addEventListener("change", e => {
-      if (e.target.checked) selected.add(item);
-      else selected.delete(item);
-      save();
-    });
+  if (e.target.checked) {
+    selected.add(item);
+    rectified.delete(item); // ❌ remove rectified
+    inputs[1].checked = false; // uncheck rectified UI
+  } else {
+    selected.delete(item);
+  }
+  save();
+});
 
-    inputs[1].addEventListener("change", e => {
-      if (e.target.checked) rectified.add(item);
-      else rectified.delete(item);
-      save();
-    });
+inputs[1].addEventListener("change", e => {
+  if (e.target.checked) {
+    rectified.add(item);
+    selected.delete(item); // ❌ remove punch
+    inputs[0].checked = false; // uncheck punch UI
+  } else {
+    rectified.delete(item);
+  }
+  save();
+});
 
     container.appendChild(label);
   });
