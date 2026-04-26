@@ -212,16 +212,15 @@ function generate() {
   let output = "Date :- " + date + "\n";
   output += "Site ID :- " + (siteId.value || "") + "\n";
   output += "Site Name :- " + (siteName.value || "") + "\n\n";
-
-  let validRectified = [...rectified].filter(x => selected.has(x));
+  
 
 if (selected.size > 0) {
-  output += "Punch point (With Defect Code):-\n";
+  output += "Punch points (With Defect Code):-\n";
   [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
 }
 
 if (validRectified.length > 0) {
-  output += "\nRectified Punch point:-\n";
+  output += "\nRectified Punch points (With Defect Code):-\n";
   validRectified.forEach((x,i)=> output += (i+1)+". "+x+"\n");
 }
 
