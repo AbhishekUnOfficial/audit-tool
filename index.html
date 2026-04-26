@@ -2,35 +2,106 @@
 <html>
 <head>
   <title>Audit Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial; padding: 20px; }
-    label { display: block; margin: 4px 0; }
-    input[type="text"] { padding: 6px; margin: 5px 0; width: 250px; }
-    button { margin-top: 20px; padding: 10px 15px; }
-    pre { background: #f4f4f4; padding: 10px; white-space: pre-wrap; }
+    body {
+      font-family: Arial;
+      padding: 10px;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .section {
+      background: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      padding: 8px 5px;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+    }
+
+    label:last-child {
+      border-bottom: none;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.4);
+      margin-right: 10px;
+    }
+
+    .buttons {
+      position: sticky;
+      bottom: 0;
+      background: white;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    button {
+      flex: 1;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+    }
+
+    button:last-child {
+      background: #28a745;
+    }
+
+    pre {
+      background: #fff;
+      padding: 10px;
+      font-size: 13px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      margin-top: 10px;
+    }
   </style>
 </head>
+
 <body>
 
 <h2>Audit Checklist</h2>
 
-<!-- Site Details -->
-<div>
-  <label>Site ID:</label>
-  <input type="text" id="siteId" placeholder="Enter Site ID">
-
-  <label>Site Name:</label>
-  <input type="text" id="siteName" placeholder="Enter Site Name">
+<div class="section">
+  <input type="text" id="siteId" placeholder="Site ID">
+  <input type="text" id="siteName" placeholder="Site Name">
 </div>
 
-<hr>
+<div class="section" id="checklist"></div>
 
-<div id="checklist"></div>
+<div class="buttons">
+  <button onclick="generate()">Generate</button>
+  <button onclick="copyText()">Copy</button>
+</div>
 
-<button onclick="generate()">Generate</button>
-<button onclick="copyText()">Copy</button>
-
-<h3>Output</h3>
 <pre id="output"></pre>
 
 <script>
@@ -97,15 +168,14 @@ function generate() {
   let siteName = document.getElementById("siteName").value || "";
 
   let today = new Date();
-  let date = today.toLocaleDateString('en-GB'); // DD/MM/YYYY
+  let date = today.toLocaleDateString('en-GB');
 
   let selected = [];
-  document.querySelectorAll('input:checked').forEach(el => {
+  document.querySelectorAll('#checklist input:checked').forEach(el => {
     selected.push(el.value);
   });
 
   let output = "";
-
   output += "Date :- " + date + "\n";
 
   if(siteId) output += "Site ID :- " + siteId + "\n";
