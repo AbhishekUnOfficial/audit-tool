@@ -153,7 +153,8 @@ const data = [
 "(PM 28) Site not ready for audit"
 ];
 
-let selectedSet = new Set(JSON.parse(localStorage.getItem("checked") || "[]"));
+let selected = new Set(JSON.parse(localStorage.getItem("selected") || "[]"));
+let rectified = new Set(JSON.parse(localStorage.getItem("rectified") || "[]"));
 
 function render(list) {
   const container = document.getElementById("list");
@@ -162,20 +163,24 @@ function render(list) {
   list.forEach(item => {
     let label = document.createElement("label");
 
-    let checked = selectedSet.has(item) ? "checked" : "";
-
     label.innerHTML = `
-      <input type="checkbox" value="${item}" ${checked}>
+      <input type="checkbox" ${selected.has(item) ? "checked" : ""} data-type="main" value="${item}">
+      <input type="checkbox" ${rectified.has(item) ? "checked" : ""} data-type="rect" value="${item}">
       ${item}
     `;
 
-    label.querySelector("input").addEventListener("change", (e) => {
-      if (e.target.checked) {
-        selectedSet.add(item);
-      } else {
-        selectedSet.delete(item);
-      }
-      saveState();
+    let inputs = label.querySelectorAll("input");
+
+    inputs[0].addEventListener("change", e => {
+      if (e.target.checked) selected.add(item);
+      else selected.delete(item);
+      save();
+    });
+
+    inputs[1].addEventListener("change", e => {
+      if (e.target.checked) rectified.add(item);
+      else rectified.delete(item);
+      save();
     });
 
     container.appendChild(label);
@@ -184,43 +189,41 @@ function render(list) {
 
 function filterList() {
   let q = document.getElementById("search").value.toLowerCase();
-  let filtered = data.filter(x => x.toLowerCase().includes(q));
-  render(filtered);
+  render(data.filter(x => x.toLowerCase().includes(q)));
 }
 
-function saveState() {
-  localStorage.setItem("checked", JSON.stringify([...selectedSet]));
-  localStorage.setItem("siteId", document.getElementById("siteId").value);
-  localStorage.setItem("siteName", document.getElementById("siteName").value);
+function save() {
+  localStorage.setItem("selected", JSON.stringify([...selected]));
+  localStorage.setItem("rectified", JSON.stringify([...rectified]));
+  localStorage.setItem("siteId", siteId.value);
+  localStorage.setItem("siteName", siteName.value);
 }
 
 window.onload = () => {
-  document.getElementById("siteId").value = localStorage.getItem("siteId") || "";
-  document.getElementById("siteName").value = localStorage.getItem("siteName") || "";
+  siteId.value = localStorage.getItem("siteId") || "";
+  siteName.value = localStorage.getItem("siteName") || "";
   render(data);
 };
 
-document.addEventListener("input", saveState);
+document.addEventListener("input", save);
 
 function generate() {
-  let output = "";
   let date = new Date().toLocaleDateString('en-GB');
-
-  output += "Date :- " + date + "\n";
+  let output = "Date :- " + date + "\n";
   output += "Site ID :- " + (siteId.value || "") + "\n";
   output += "Site Name :- " + (siteName.value || "") + "\n\n";
 
   output += "Punch point (With Defect Code):-\n";
+  [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
 
-  [...selectedSet].forEach((item, i) => {
-    output += (i+1) + ". " + item + "\n";
-  });
+  output += "\nRectified Punch point:-\n";
+  [...rectified].forEach((x,i)=> output += (i+1)+". "+x+"\n");
 
   document.getElementById("output").textContent = output;
 }
 
 function copyText() {
-  navigator.clipboard.writeText(document.getElementById("output").textContent);
+  navigator.clipboard.writeText(output.textContent);
   alert("Copied");
 }
 
