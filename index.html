@@ -99,6 +99,10 @@
   <input type="text" id="siteName" placeholder="Site Name">
 </div>
 
+<div class="section">
+  <input type="text" id="search" placeholder="Search (e.g. earthing, cable...)" onkeyup="filterList()">
+</div>
+
 <div class="section" id="checklist"></div>
 
 <div class="buttons">
@@ -162,74 +166,22 @@ const data = [
 
 const container = document.getElementById("checklist");
 
-// Generate checklist
-data.forEach(item => {
-  let label = document.createElement("label");
-  label.innerHTML = `<input type="checkbox" value="${item}"> ${item}`;
-  container.appendChild(label);
-});
-
-// Load saved data
-window.onload = function () {
-  document.getElementById("siteId").value = localStorage.getItem("siteId") || "";
-  document.getElementById("siteName").value = localStorage.getItem("siteName") || "";
-
-  let saved = JSON.parse(localStorage.getItem("checkedItems") || "[]");
-
-  document.querySelectorAll('#checklist input').forEach(el => {
-    if (saved.includes(el.value)) el.checked = true;
+function renderList(list) {
+  container.innerHTML = "";
+  list.forEach(item => {
+    let label = document.createElement("label");
+    label.innerHTML = `<input type="checkbox" value="${item}"> ${item}`;
+    container.appendChild(label);
   });
-};
-
-// Auto save
-document.addEventListener("change", () => {
-  const checked = [];
-  document.querySelectorAll('#checklist input:checked').forEach(el => {
-    checked.push(el.value);
-  });
-
-  localStorage.setItem("checkedItems", JSON.stringify(checked));
-  localStorage.setItem("siteId", document.getElementById("siteId").value);
-  localStorage.setItem("siteName", document.getElementById("siteName").value);
-});
-
-// Generate report
-function generate() {
-  let siteId = document.getElementById("siteId").value || "";
-  let siteName = document.getElementById("siteName").value || "";
-
-  let date = new Date().toLocaleDateString('en-GB');
-
-  let selected = [];
-  document.querySelectorAll('#checklist input:checked').forEach(el => {
-    selected.push(el.value);
-  });
-
-  let output = "Date :- " + date + "\n";
-
-  if(siteId) output += "Site ID :- " + siteId + "\n";
-  if(siteName) output += "Site Name :- " + siteName + "\n\n";
-
-  output += "Punch point (With Defect Code):-\n";
-
-  selected.forEach((item, i) => {
-    output += (i+1) + ". " + item + "\n";
-  });
-
-  document.getElementById("output").textContent = output;
 }
 
-// Copy
-function copyText() {
-  let text = document.getElementById("output").textContent;
-  navigator.clipboard.writeText(text);
-  alert("Copied");
-}
+renderList(data);
 
-// Clear
-function clearData() {
-  localStorage.clear();
-  location.reload();
+// Search filter
+function filterList() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let filtered = data.filter(item => item.toLowerCase().includes(search));
+  renderList(filtered);
 }
 </script>
 
