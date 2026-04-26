@@ -75,6 +75,10 @@
       background: #28a745;
     }
 
+    .clear-btn {
+      background: #dc3545 !important;
+    }
+
     pre {
       background: #fff;
       padding: 10px;
@@ -100,6 +104,7 @@
 <div class="buttons">
   <button onclick="generate()">Generate</button>
   <button onclick="copyText()">Copy</button>
+  <button class="clear-btn" onclick="clearData()">Clear</button>
 </div>
 
 <pre id="output"></pre>
@@ -157,26 +162,50 @@ const data = [
 
 const container = document.getElementById("checklist");
 
+// Generate checklist
 data.forEach(item => {
   let label = document.createElement("label");
   label.innerHTML = `<input type="checkbox" value="${item}"> ${item}`;
   container.appendChild(label);
 });
 
+// Load saved data
+window.onload = function () {
+  document.getElementById("siteId").value = localStorage.getItem("siteId") || "";
+  document.getElementById("siteName").value = localStorage.getItem("siteName") || "";
+
+  let saved = JSON.parse(localStorage.getItem("checkedItems") || "[]");
+
+  document.querySelectorAll('#checklist input').forEach(el => {
+    if (saved.includes(el.value)) el.checked = true;
+  });
+};
+
+// Auto save
+document.addEventListener("change", () => {
+  const checked = [];
+  document.querySelectorAll('#checklist input:checked').forEach(el => {
+    checked.push(el.value);
+  });
+
+  localStorage.setItem("checkedItems", JSON.stringify(checked));
+  localStorage.setItem("siteId", document.getElementById("siteId").value);
+  localStorage.setItem("siteName", document.getElementById("siteName").value);
+});
+
+// Generate report
 function generate() {
   let siteId = document.getElementById("siteId").value || "";
   let siteName = document.getElementById("siteName").value || "";
 
-  let today = new Date();
-  let date = today.toLocaleDateString('en-GB');
+  let date = new Date().toLocaleDateString('en-GB');
 
   let selected = [];
   document.querySelectorAll('#checklist input:checked').forEach(el => {
     selected.push(el.value);
   });
 
-  let output = "";
-  output += "Date :- " + date + "\n";
+  let output = "Date :- " + date + "\n";
 
   if(siteId) output += "Site ID :- " + siteId + "\n";
   if(siteName) output += "Site Name :- " + siteName + "\n\n";
@@ -190,10 +219,17 @@ function generate() {
   document.getElementById("output").textContent = output;
 }
 
+// Copy
 function copyText() {
   let text = document.getElementById("output").textContent;
   navigator.clipboard.writeText(text);
   alert("Copied");
+}
+
+// Clear
+function clearData() {
+  localStorage.clear();
+  location.reload();
 }
 </script>
 
