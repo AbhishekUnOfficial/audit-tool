@@ -214,12 +214,12 @@ function generate() {
   output += "Site Name :- " + (siteName.value || "") + "\n\n";
 
   if (selected.size > 0) {
-  output += "Punch point (With Defect Code):-\n";
+  output += "Punch points (With Defect Code):-\n";
   [...selected].forEach((x,i)=> output += (i+1)+". "+x+"\n");
 }
 
   if (rectified.size > 0) {
-  output += "\nRectified Punch point:-\n";
+  output += "\nRectified Punch points (With Defect Code):-\n";
   [...rectified].forEach((x,i)=> output += (i+1)+". "+x+"\n");
 }
 
