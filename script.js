@@ -190,6 +190,10 @@ function copyText() {
 }
 
 function clearData() {
+  document.getElementById("confirmBox").style.display = "flex";
+}
+
+function confirmYes() {
   localStorage.clear();
 
   selected.clear();
@@ -203,5 +207,11 @@ function clearData() {
 
   render(data);
 
+  document.getElementById("confirmBox").style.display = "none";
+
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function confirmNo() {
+  document.getElementById("confirmBox").style.display = "none";
 }
