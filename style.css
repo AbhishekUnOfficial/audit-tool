@@ -30,20 +30,15 @@ input[type="text"] {
   width: 100%;
   padding: 14px 12px;
   margin-bottom: 10px;
-
   font-size: 15px;
   border-radius: 12px;
   border: none;
   outline: none;
-
   background: #ffffff;
-
   box-shadow:
     0 1px 2px rgba(0,0,0,0.05),
     0 6px 16px rgba(0,0,0,0.06);
-
   transition: all 0.2s ease;
-
   text-transform: capitalize;
 }
 
@@ -65,13 +60,10 @@ label {
   display: flex;
   align-items: center;
   padding: 10px 6px;
-
   font-size: 14px;
   color: #1c1c1e;
-
   border-radius: 10px;
   margin-bottom: 4px;
-
   transition: background 0.2s ease;
 }
 
@@ -110,16 +102,15 @@ input[type="checkbox"] {
   box-shadow:
     0 10px 30px rgba(0,0,0,0.15),
     inset 0 1px 0 rgba(255,255,255,0.7);
+  z-index: 10;
 }
 
 /* ===== BUTTONS ===== */
 button {
   flex: 1;
   height: 40px;
-
   border-radius: 12px;
   border: none;
-
   font-size: 14px;
   font-weight: 500;
   color: white;
@@ -127,7 +118,6 @@ button {
   box-shadow:
     0 2px 6px rgba(0,0,0,0.15),
     inset 0 1px 0 rgba(255,255,255,0.3);
-
   transition: all 0.2s ease;
 }
 
@@ -166,6 +156,8 @@ pre {
   line-height: 1.5;
   color: #1c1c1e;
   white-space: pre-wrap;
+  z-index: 1;
+  position: relative;
 }
 
 pre:empty {
@@ -188,29 +180,23 @@ pre strong {
   display: none;
   position: fixed;
   inset: 0;
-
   background: rgba(0,0,0,0.3);
   backdrop-filter: blur(6px);
-
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 /* Modal box */
 .modal-content {
   width: 85%;
   max-width: 300px;
-
   padding: 20px;
   border-radius: 16px;
-
   background: #ffffff;
-
   text-align: center;
-
   box-shadow:
     0 10px 25px rgba(0,0,0,0.2);
-
   animation: pop 0.2s ease;
 }
 
