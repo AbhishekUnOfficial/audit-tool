@@ -1,0 +1,74 @@
+{
+    "Addendum": [
+        {
+            "Defect Code": "F19",
+            "Check-point": "PCC Thickness / Quality",
+            "Description": "PCC thickness should be measured as per drawing and in general varies from 50 to 75 mm. The surface should be smooth, free from voids with no mixing of aggregate or soil"
+        },
+        {
+            "Defect Code": "F25",
+            "Check-point": "Clear cover not maintained between steel / shuttering",
+            "Description": "Steel should not touch with shuttering due to non placement of cover block . 40 mm for column, 25 mm for beam and 50 mm for footing or as recommended in drawing."
+        },
+        {
+            "Defect Code": "F46",
+            "Check-point": "Back-filling not done as per guideline",
+            "Description": "Soil back filling shall be done in layers of 200-300 mm starting from center towards the end and densely compacted by Manual and sprinkling min. water as necessary for compaction."
+        },
+        {
+            "Defect Code": "F38",
+            "Check-point": "JMS Difference",
+            "Description": "Incorrect JMS Difference between Partner offered JMS sheet and Quality approved quantities or items"
+        },
+        {
+            "Defect Code": "F48",
+            "Check-point": "Any Plastering / repair on foundation",
+            "Description": "All RCC foundation work should be in natural condition and no rectification work like plastering , any other form of repair shall be carried out or hiding defects like honey combing, concrete segregation, poor finish , uneven finish etc"
+        },
+        {
+            "Defect Code": "",
+            "Check-point": "Any Plastering / repair on foundation",
+            "Description": "All RCC foundation work should be in natural condition and no rectification work like plastering , any other form of repair shall be carried out or hiding defects like honey combing, concrete segregation, poor finish , uneven finish etc"
+        },
+        {
+            "Defect Code": "-",
+            "Check-point": "FPS not installed (TSP)",
+            "Description": "FPS is often installed separately post T2 due to various reason and is recommended to go with OEM self certification and accountability"
+        },
+        {
+            "Defect Code": "T42",
+            "Check-point": "Poor aesthetic condition. (TP)",
+            "Description": "Any Section having dent / damage / crack / sticker damage / pain peel off / incorrect size / gap in installation / color miss match / wrong placement / rusting / incomplete paint / miss alignment / any on site repair etc. "
+        },
+        {
+            "Defect Code": "ELEC-01",
+            "Check-point": "Incomplete installation of Equipment (TSP)",
+            "Description": "Any equipment which is not installed or no power , automation, alarm, Earthing connection or termination pending. Equipment not permanent placed as per the layout."
+        },
+        {
+            "Defect Code": "G-1",
+            "Check-point": "Documents not ready",
+            "Description": "Documents regularly offered by TSP for audit : SBC / SSC / Drawing / Tower / template drawing / filled check sheet / TVCL / Equipment commissioning reports"
+        },
+        {
+            "Defect Code": "F22",
+            "Check-point": "Shuttering, Lining & Plumbing",
+            "Description": "The shuttering panel must in assembled in line horizontally and vertically without any inclination"
+        },
+        {
+            "Defect Code": "F22",
+            "Check-point": "Shuttering, Quality of shuttering panels",
+            "Description": "Shuttering panels must be smooth and free from surface defects which cause uneven and patchy appearance on finish concrete post shuttering removal"
+        },
+        {
+            "Defect Code": "",
+            "Check-point": "Site Specific Deviations",
+            "Description": "Any site-specific deviation such as horizontal boring for earthing, earth pit not possible during C3 due to space constraint, minor layout changes due to space constraint taken prior to audit will not be considered as a punch point for partner performance"
+        },
+        {
+            "Defect Code": "",
+            "Check-point": "Any deviation recommended by NDH for RFAI will not be considered as partner non-performance",
+            "Description": ""
+        }
+    ]
+}

@@ -1,0 +1,219 @@
+{
+    "Electrical Defect Codes": [
+        {
+            "Defect Code": "ELEC-01",
+            "Classification of Defects": "Equipment Status- 1) Faulty Equipment, 2) Faulty component, 3) Damaged 4) Dent 5) Cell leakage (OEM for 1,2 and TSP for 3,4,5,)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-02",
+            "Classification of Defects": "Equipment position not placed as per approved layout.",
+            "Severity": "Minor"
+        },
+        {
+            "Defect Code": "ELEC-03",
+            "Classification of Defects": "Cable: 1) Make, 2) Size, 3) Grade, 4) St. Compliance",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-04",
+            "Classification of Defects": "Cable termination : 1) Terminals without lugs, 2) Terminals lug crimping, 3) Terminals without Heat shrink sleeves, 4) Terminals tightness",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-05",
+            "Classification of Defects": "Cable Routings :1)Underground trench depth 600mm, 2) Cable routing protections-HDPE pipe/flexible pipe",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-06",
+            "Classification of Defects": "Equipment earthing as per earthing scheme: 1) All Equipment bodies earthing, 2) Cable sizes as per specification, 3) All terminations tightened, 4) Terminal crimped",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-07",
+            "Classification of Defects": "Earthing strips sizes :1)EGB/IGB with 25x6mm GI, 3)Tower/Pole with 25x6mm GI, 4) LA with 25x3mm GI, 5) All other metallic body with 25x3mm GI strip, 6) Shelter/Cage/Shed/fence/EB panel with 25x3mm GI strip",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-08",
+            "Classification of Defects": "Combined Earthing value <2 Ohms",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-09",
+            "Classification of Defects": "Earthing scheme of site as per GL",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-10",
+            "Classification of Defects": "EGB / IGB interconnection not done in indoor sites",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-11",
+            "Classification of Defects": "Non PDI equipment installed at site",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-12",
+            "Classification of Defects": "EGB / IGB interconnection not done in indoor sites",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-13",
+            "Classification of Defects": "Non PDI equipment installed at site",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-14",
+            "Classification of Defects": "False / wrong commission report.",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-15",
+            "Classification of Defects": "OEM Comm report not available: 1) BB, 2) SMPS, 3) SPS, 4) DG, 5) AC",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-16",
+            "Classification of Defects": "MCB: 1) Make,2) Ratings, 3) St. Compliance",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-17",
+            "Classification of Defects": "MCCB: 1) Make,2) Ratings, 3) St. Compliance, 4)Spreader link for MCCB",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-18",
+            "Classification of Defects": "DCDB: 1) Configuration, 2) St. Compliance",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-19",
+            "Classification of Defects": "ACDB: 1) Configuration, 2) St. Compliance",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-20",
+            "Classification of Defects": "Equipment functionality- 1) No Output, 2) Display not working, 3) Indications not working (OEM)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-21",
+            "Classification of Defects": "Equipment safety features- 1) DG safety, 2) F&S safety, 3) HRT safety (OEM)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-22",
+            "Classification of Defects": "Equipment Automation and alarm (OEM)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-23",
+            "Classification of Defects": "BB : 1) Cell voltage variation -0.05V, 2) Cell terminal torque, 3) TC cable not available, 4) Interconnecting strip (OEM for 1,2, 4 & TSP for 3,)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-24",
+            "Classification of Defects": "Parameter settings in SMPS, SPS etc (OEM)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-25",
+            "Classification of Defects": "Class B/Class B+C SPD installation",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-26",
+            "Classification of Defects": "All OD cabinet cooling system functional (OEM)",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-27",
+            "Classification of Defects": "Aviation lamp functionality as applicable",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-28",
+            "Classification of Defects": "Power socket installed as per location and IP rating",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-29",
+            "Classification of Defects": "All OD distribution boards including Meter Box IP rating",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-30",
+            "Classification of Defects": "Meter box installation: 1) Grouting of Meter Box stand, 2) No mounting over fence/cage/Tower legs/Tower foundation",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-31",
+            "Classification of Defects": "Cable tray installation: 1)as par layout/ slop not towards BTS / Cable tray defect free / rusting or any galvanization issue",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-32",
+            "Classification of Defects": "Equipment mounting poles grouting: 1) SP/SPS poles, 2) SM Pole",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-33",
+            "Classification of Defects": "Galvanizing of : GI strips / IGB / EGB < 85 microns",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-34",
+            "Classification of Defects": "Interconnections of tower legs using 25x6mm GI strip",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-35",
+            "Classification of Defects": "DG Earthing: 1) GRID around DG using 25x3mm GI strip, 2) DG canopy earthing at DG GRID, 3) DG Grid with Site earth GRID using 25x6mm GI strip, 4) DG neutral as per GL",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-36",
+            "Classification of Defects": "Separation of active and passive earthing strips not done",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-37",
+            "Classification of Defects": "Earthing not isolated from building metallic structures",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-38",
+            "Classification of Defects": "Anti-static earthing of shelter not complied",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-39",
+            "Classification of Defects": "Cable tray earthing not done",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-40",
+            "Classification of Defects": "Earth strip joints: 1) Welding not proper, 2) Nut-bolts not used, 3) Overlapping not as per specification, 4) Loose nut-bolts",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-41",
+            "Classification of Defects": "GI strip routings:1) Underground trench of 600mm, 2) Surface routing using SS saddle",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-42",
+            "Classification of Defects": "LA GI strip routing using insulator (RTT,GBT,GBM)",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-43",
+            "Classification of Defects": "Equipment mounting poles grounding: 1) SP/SPS poles, 2) SM Pole, 3) LT EB poles, 4) Earthing using 25x3mm GI strip",
+            "Severity": "Critical"
+        }
+    ]
+}

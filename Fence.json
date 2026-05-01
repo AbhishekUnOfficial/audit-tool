@@ -1,0 +1,74 @@
+{
+    "Fence Defects Codes": [
+        {
+            "Defect Code": "Fenc-01",
+            "Classification of Defects": "Barbed wire: Size, number of runs (diagonal), tightening at every post not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-02",
+            "Classification of Defects": "Angle post: Size, spacing & nos, painting not ok",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "Fenc-03",
+            "Classification of Defects": "Any breakage of barbed wire or excessive rust",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-04",
+            "Classification of Defects": "Gate and column of gate not as per lite weight design / drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-05",
+            "Classification of Defects": "Painting: Single coat primer and double coat paint not done",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "Fenc-06",
+            "Classification of Defects": "Back filling",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-07",
+            "Classification of Defects": "Over all finish / painting / snowcem etc.",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "Fenc-08",
+            "Classification of Defects": "Rusting if any (angle, gate , fencing post, shed etc.)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-09",
+            "Classification of Defects": "Fence / angles grouting not as per drawing",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "Fenc-10",
+            "Classification of Defects": "Improper brickwork and masonry up to DPC level",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-11",
+            "Classification of Defects": "Foundation not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-12",
+            "Classification of Defects": "Gate column & foundation not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-13",
+            "Classification of Defects": "DPC thickness less",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Fenc-14",
+            "Classification of Defects": "Fence / angles grouting not as per drawing",
+            "Severity": "Critical"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "OD Bed Defcet Codes": [
+        {
+            "Defect Code": "OB-01",
+            "Classification of Defects": "Bed position not as per layout",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "OB-02",
+            "Classification of Defects": "Depth of footing / size of casted column / foundation of bed not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-03",
+            "Classification of Defects": "Honey combing / segregation of concrete OD/DG bed footing / base foundation / column",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-04",
+            "Classification of Defects": "Column alignment / eccentricity if any",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-05",
+            "Classification of Defects": "Expired Cement on site",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-06",
+            "Classification of Defects": "Casting done without audit engineer",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-07",
+            "Classification of Defects": "Drawing / guideline not followed",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-08",
+            "Classification of Defects": "Steel placement / less qty / make / grade etc.",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-09",
+            "Classification of Defects": "Shuttering non standard / oil based / not completed / not available",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-10",
+            "Classification of Defects": "Any foundation collapse, settlement / crack",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-11",
+            "Classification of Defects": "DG / equipment placement on foundation or OD bed before 7 days of curing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "OB-12",
+            "Classification of Defects": "Kerb angle not provided at ground based DG platform",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "OB-13",
+            "Classification of Defects": "OD bed should not be backfilled area",
+            "Severity": "Critical"
+        }
+    ]
+}

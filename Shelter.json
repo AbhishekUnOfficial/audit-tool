@@ -1,0 +1,99 @@
+{
+    "General and Shelter / Cage / Shed Defect Code": [
+        {
+            "Defect Code": "Str-01",
+            "Classification of Defects": "Corrugated sheet: Thickness, overlap, projection not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-02",
+            "Classification of Defects": "Galvanized J hook with bitumen washer not used on Shed roof",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-03",
+            "Classification of Defects": "Hilti fastener: Nos & Size not as per drawing or not used",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-04",
+            "Classification of Defects": "supply of Shed not as per drawing / missing member / wrong member / short item etc. Post: Size, verticality not ok",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-05",
+            "Classification of Defects": "Installation of Shed not as per drawing / vertical post / wrong member placement / missing item / local fabrication / slop of shed roof / gap between panel or section not as per drawing etc.",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-06",
+            "Classification of Defects": "Covered the fastener by grouting",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-07",
+            "Classification of Defects": "Painting / galvanizing as per recommendation / Rust if any / crack / damage if any for",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-08",
+            "Classification of Defects": "Nut/Bolt : Grade & tightening not ok as per defined torque value",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-09",
+            "Classification of Defects": "Non-compliance to guideline / drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "Str-10",
+            "Classification of Defects": "Cut-out for cable entry not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-11)",
+            "Classification of Defects": "Brickwork not intact, without plaster (inside / outside)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-12)",
+            "Classification of Defects": "Shelter as per drawing / self certification from partner",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-13)",
+            "Classification of Defects": "No gap in panel / air tight / water tight ( no air / water leakage)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-14)",
+            "Classification of Defects": "Leveling of floor / antistatic tile free from defect , air bubble etc./ thermal welding incase of single floor tile not installed",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-15)",
+            "Classification of Defects": "Door in closed without any leakage air / water and door and lock workable condition",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-16)",
+            "Classification of Defects": "Door size / alignment as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-17)",
+            "Classification of Defects": "Shelter roof as per drawing including slop / no water leakage",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-18)",
+            "Classification of Defects": "Any Cage / shelter / shed collapse or uprooted",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "(Str-19)",
+            "Classification of Defects": "Any Civil room no leakage or water out side to inside",
+            "Severity": "Critical"
+        }
+    ]
+}

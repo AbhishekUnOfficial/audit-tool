@@ -1,0 +1,39 @@
+{
+    "Earthing Defect Code": [
+        {
+            "Defect Code": "ER-01",
+            "Classification of Defects": "Chemical earthing - 1) Approved make, 2) Qty, 3) Expired Critical",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ER-02",
+            "Classification of Defects": "Earthing ROD: 1) Length, 2) Dia, 3)Std Compliance, 4) free from damage/Rust Critical",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ER-03",
+            "Classification of Defects": "Separate Earth pit for 3-Ph DG neutral Critical",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ER-04",
+            "Classification of Defects": "Earthpit : 1) Bore size, 2) Bore depth, 3) No of Earthpits, Critical",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ER-05",
+            "Classification of Defects": "Earth pit chamber : 1) FRP chamber shall be used, 2) No soil settlement, 3) No damage/crack, 4) FRP chamber cover Critical",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ER-06",
+            "Classification of Defects": "Earthpit Interconnections: Interconnection using 50x6mm GI strips Major",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ER-07",
+            "Classification of Defects": "LA: 1) LA size, 2) LA for all poles in RTP sites, 3) LA for GBT/RTT/GBM using insulator Critical",
+            "Severity": "Critical"
+        }
+    ]
+}

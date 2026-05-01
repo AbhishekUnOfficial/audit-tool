@@ -1,0 +1,214 @@
+{
+    "Civil Defect Codes": [
+        {
+            "Defect Code": "F1",
+            "Classification of Defects": "Position of foundation not as per layout",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F2",
+            "Classification of Defects": "PCC Thickness / quality",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F3",
+            "Classification of Defects": "Steel: Binding not as per Drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F4",
+            "Classification of Defects": "Column - C/C & Diagonals",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F5",
+            "Classification of Defects": "Foundation depth not as per drawing",
+            "Severity": "Minor"
+        },
+        {
+            "Defect Code": "F6",
+            "Classification of Defects": "Miss alignment between first lift / Foundation boltsgrouting portion",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F7",
+            "Classification of Defects": "Depth of footing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F8",
+            "Classification of Defects": "Clear cover not maintained between steel / shuttering",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F9",
+            "Classification of Defects": "Pile Foundation - size, Number and depth of pile, c/c distance not as per drawing",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F10",
+            "Classification of Defects": "Re-baring not done in front of audit engineer",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F11",
+            "Classification of Defects": "Pullover test non-compliance where re-baring is recommended as per drawing",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F12",
+            "Classification of Defects": "Slump value not ok",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F13",
+            "Classification of Defects": "Vibrator not used",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F14",
+            "Classification of Defects": "Mix Proportion as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F15",
+            "Classification of Defects": "RMC Batch report, Grade , Time > 2hrs.30 min , QTY less",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F16",
+            "Classification of Defects": "Design Mix M35 / M25 / M20 - M25 NDT value - 1) 5th Day , 2)7th Day , 3)Post 28 days NDT value M35 - 1) 4th day NDT value, 2) 7th Day NDT value, 3) Post 28 days NDT value M20 – Post 28 days NDT & UPV values",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F17",
+            "Classification of Defects": "Foundation nut/bolts & Template : Size, Nos and placement & leveling not as per drawing",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F18",
+            "Classification of Defects": "Foundation bolts PDI approved and visible embossing of foundation bolts (TP)",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "F19",
+            "Classification of Defects": "Precast block for Cow foundation - cracks etc",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F20",
+            "Classification of Defects": "All foundation & RCC size not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F21",
+            "Classification of Defects": "Incorrect JMS",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F22",
+            "Classification of Defects": "Shuttering: 1) Oil not applied, 2) Gap not filled , 3) Not tighten 4)Lining & Plumbing 5)Quality of shuttering panels",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F23",
+            "Classification of Defects": "Steel - 1) Make, 2) Dimension, 3) Grade, 4) Bar binding not as per drawing, 5) less qty",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F24",
+            "Classification of Defects": "Cement - Make, Grade, Expiry, No of bags",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F25",
+            "Classification of Defects": "Aggregates, Coarse / Fine - 1) Less qty. 2) Impurities, 3) Aggregate size & shape",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F26",
+            "Classification of Defects": "Non provision of Drainpipe (for Monopole / Eco lite / applicable site)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F27",
+            "Classification of Defects": "Excavation not as per drawing",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F28",
+            "Classification of Defects": "No / incorrect Structural stability certificate for Roof top site. (Planning/SC)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F29",
+            "Classification of Defects": "Slab for Pole installation 1) M20 grade for roof , 2) thickness 125 mm (Planning / SC)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F30",
+            "Classification of Defects": "Anchoring chemical not available / expired",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F31",
+            "Classification of Defects": "Wrong wind speed foundation design used (Planning / SC)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F32",
+            "Classification of Defects": "Foundation drawing w.r.t. SBC report (Planning / SC / TSP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F33",
+            "Classification of Defects": "Site level above NGL or road level whichever is higher as per drawing / layout recommendation",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F33",
+            "Classification of Defects": "Remove the vertical shuttering < 24 hrs.",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F36",
+            "Classification of Defects": "Pile hacking before 3 days",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F37",
+            "Classification of Defects": "7 days curing not complied (Jute bag / ponding)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F38",
+            "Classification of Defects": "7 days curing not done for tower erection",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F39",
+            "Classification of Defects": "Back-filling not done as per guideline",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F40",
+            "Classification of Defects": "Foundation bolt: Bent / damage / tilt after Casting",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F41",
+            "Classification of Defects": "Any Plastering / repair on foundation Minor",
+            "Severity": "Minor"
+        },
+        {
+            "Defect Code": "F42",
+            "Classification of Defects": "Soil settlement",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "F43",
+            "Classification of Defects": "Honeycombing or Steel visible post casting",
+            "Severity": "Critical"
+        }
+    ]
+}

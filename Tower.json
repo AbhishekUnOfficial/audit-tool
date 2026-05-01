@@ -1,0 +1,219 @@
+{
+    "Tower": [
+        {
+            "Defect Code": "T1",
+            "Classification of Defects": "Tower / Monopole / structure / not as per defined wind zone (Planning)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T2",
+            "Classification of Defects": "Base plate leveling not within +/- 5 mm for Monopole and +/- 10 mm for angular tower (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T3",
+            "Classification of Defects": "Thread not available below the base nut (available below the base plate) post tower erection (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T4",
+            "Classification of Defects": "Thread projection > 3- 5 threads after lock-nut not maintained (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T5",
+            "Classification of Defects": "Chiseling on foundation bolts thread not done (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T6",
+            "Classification of Defects": "No Grouting or Grouting without shrinkom (TSP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T7",
+            "Classification of Defects": "Foundation bolts torquing issue for GBM (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T8",
+            "Classification of Defects": "Foundation bolts breaking during tightening (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T9",
+            "Classification of Defects": "Missing base nut / lock nut / main nut / washers, main nut / lock nut having different size if any (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T10",
+            "Classification of Defects": "Non PDI Tower used at site (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T22",
+            "Classification of Defects": "Loose nut bolts, Gap, alignment, fitment, installation issue, wrong placement etc. (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T23",
+            "Classification of Defects": "Grade of nuts/bolts not as per drawing or local purchased / ungraded or wrong grade used (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T24",
+            "Classification of Defects": "Missing / undersize nut/bolts (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T25",
+            "Classification of Defects": "Tightening torque not complied as per torque value (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T26",
+            "Classification of Defects": "Verticality not within limits (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T27",
+            "Classification of Defects": "Flange gap > 5 mm (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T28",
+            "Classification of Defects": "Leg to leg gap > 8 mm in angular tower (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T29",
+            "Classification of Defects": "Gliilittifiti(TP)MjDefect Code Classification of Defects Severity",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T31",
+            "Classification of Defects": "LA size, installation without insulator (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T32",
+            "Classification of Defects": "Platform: Size and numbers / height not as per drawing (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T33",
+            "Classification of Defects": "Mount : Size, height and nos not as per drawing (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T34",
+            "Classification of Defects": "Ladder fitment not as per drawing and any damage / twisting / bending / location as per layout (Feeder cable easy access to BTS) (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T35",
+            "Classification of Defects": "Cable tray fitment not as per drawing and any damage / twisting / bending (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T36",
+            "Classification of Defects": "Safety guard ribs not as per drawing (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T37",
+            "Classification of Defects": "Painting > 45m height not done (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T38",
+            "Classification of Defects": "Poor aesthetic condition. (TP) Minor",
+            "Severity": "Minor"
+        },
+        {
+            "Defect Code": "T39",
+            "Classification of Defects": "Distortion of existing tilt over a period of time / loading (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T40",
+            "Classification of Defects": "Tower / Monopole / Structure Collapse (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T41",
+            "Classification of Defects": "Noncompliance to Indus guidelines during Structure / tower / Monopole supply or installation process (TP / EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T42",
+            "Classification of Defects": "Any PDI defect in tower / structure / monopole / Pole (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T43",
+            "Classification of Defects": "IS 1161 of Pipe section - make / Grade of steel notas per drawing / approved brand (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T44",
+            "Classification of Defects": "Verticality of Pole / PDI defect on pole / wrong supplied / less qty etc.(TP /TSP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T45",
+            "Classification of Defects": "PDI not done of pole (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T47",
+            "Classification of Defects": "No of pole installed as per planned drawing (TSP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T48",
+            "Classification of Defects": "Fence installation not done / not installed as per drawing / loose fence / missing elements (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T49",
+            "Classification of Defects": "Cow supplied without PDI (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T50",
+            "Classification of Defects": "Any damage / welding / dent / crack in Cow (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T51",
+            "Classification of Defects": "Cow assembly issue (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T52",
+            "Classification of Defects": "Cow erection not done / guy rope not installed (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T53",
+            "Classification of Defects": "Cow Installation element not as per drawing / missing / short supply or defective supply (TP/EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T55",
+            "Classification of Defects": "Missing hard ware / non galvanized / wrong / short supplied hardware for Cow installation (TP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T56",
+            "Classification of Defects": "Cow placement not as per drawing (EP)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "T57",
+            "Classification of Defects": "Supply and installation not as per drawing (TP/EP)",
+            "Severity": "Critical"
+        }
+    ]
+}
