@@ -1,147 +1,147 @@
 {
     "General & Project Management Defect Codes": [
         {
-            "Defect Code": "(PM-01)",
+            "Defect Code": "PM-01",
             "Classification of Defects": "Mixture machine not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-02)",
+            "Defect Code": "PM-02",
             "Classification of Defects": "Vibrator not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-03)",
+            "Defect Code": "PM-03",
             "Classification of Defects": "Slump cone not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-04)",
+            "Defect Code": "PM-04",
             "Classification of Defects": "Shute / Tremie pipe not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-05)",
+            "Defect Code": "PM-05",
             "Classification of Defects": "RMC Pump not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-06)",
+            "Defect Code": "PM-06",
             "Classification of Defects": "Dewatering pump (water table / rain) (PM)",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-07)",
+            "Defect Code": "PM-07",
             "Classification of Defects": "Chemical grouting gun not available (PM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-08)",
+            "Defect Code": "PM-08",
             "Classification of Defects": "Shuttering: 1) Not available (PM), 2) Incomplete shuttering (PM), 3) Non steel / non waterproof wooden shuttering",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-09)",
+            "Defect Code": "PM-09",
             "Classification of Defects": "Steel - 1) Not available, 2) Not completed",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-10)",
+            "Defect Code": "PM-10",
             "Classification of Defects": "Cement — not available",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-11)",
+            "Defect Code": "PM-11",
             "Classification of Defects": "Aggregates, Coarse / Fine- Not available",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-12)",
+            "Defect Code": "PM-12",
             "Classification of Defects": "Supervisor not available",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-13)",
+            "Defect Code": "PM-13",
             "Classification of Defects": "Team not available",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-14)",
+            "Defect Code": "PM-14",
             "Classification of Defects": "Light arrangement not available incase of night work",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-15)",
+            "Defect Code": "PM-15",
             "Classification of Defects": "Site casting without audit engineer",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-16)",
+            "Defect Code": "PM-16",
             "Classification of Defects": "Tower erection started before 7 days of foundation bolt grouting (TSP)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-17)",
+            "Defect Code": "PM-17",
             "Classification of Defects": "Incomplete tower / Non readiness (TSP)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-18)",
+            "Defect Code": "PM-18",
             "Classification of Defects": "Tower team not available (TP/EP)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-19)",
+            "Defect Code": "PM-19",
             "Classification of Defects": "Torque wrench not available (TP/EP)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-20)",
+            "Defect Code": "PM-20",
             "Classification of Defects": "Local rectification done for tower",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-21)",
+            "Defect Code": "PM-21",
             "Classification of Defects": "Equipment not installed",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-22)",
+            "Defect Code": "PM-22",
             "Classification of Defects": "Equipment not commissioned",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-23)",
+            "Defect Code": "PM-23",
             "Classification of Defects": "False / wrong commission report (TSP/OEM)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-24)",
+            "Defect Code": "PM-24",
             "Classification of Defects": "Signage board Non availability at site ",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-25)",
+            "Defect Code": "PM-25",
             "Classification of Defects": "Milestones not followed; multiple audits done (Excluded in case tool not functioning)",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-26)",
+            "Defect Code": "PM-26",
             "Classification of Defects": "Not offered on tool (Excluded in case tool not functioning)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-27)",
+            "Defect Code": "PM-27",
             "Classification of Defects": "Readiness picture not available",
             "Severity": "Major"
         },
         {
-            "Defect Code": "(PM-28)",
+            "Defect Code": "PM-28",
             "Classification of Defects": "Site not ready",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(PM-29)",
+            "Defect Code": "PM-29",
             "Classification of Defects": "Nonstandard Item in JMS",
             "Severity": "Critical"
         }

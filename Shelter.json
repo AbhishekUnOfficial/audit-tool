@@ -51,47 +51,47 @@
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-11)",
+            "Defect Code": "Str-11",
             "Classification of Defects": "Brickwork not intact, without plaster (inside / outside)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-12)",
+            "Defect Code": "Str-12",
             "Classification of Defects": "Shelter as per drawing / self certification from partner",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-13)",
+            "Defect Code": "Str-13",
             "Classification of Defects": "No gap in panel / air tight / water tight ( no air / water leakage)",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-14)",
+            "Defect Code": "Str-14",
             "Classification of Defects": "Leveling of floor / antistatic tile free from defect , air bubble etc./ thermal welding incase of single floor tile not installed",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-15)",
+            "Defect Code": "Str-15",
             "Classification of Defects": "Door in closed without any leakage air / water and door and lock workable condition",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-16)",
+            "Defect Code": "Str-16",
             "Classification of Defects": "Door size / alignment as per drawing",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-17)",
+            "Defect Code": "Str-17",
             "Classification of Defects": "Shelter roof as per drawing including slop / no water leakage",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-18)",
+            "Defect Code": "Str-18",
             "Classification of Defects": "Any Cage / shelter / shed collapse or uprooted",
             "Severity": "Critical"
         },
         {
-            "Defect Code": "(Str-19)",
+            "Defect Code": "Str-19",
             "Classification of Defects": "Any Civil room no leakage or water out side to inside",
             "Severity": "Critical"
         }

@@ -67,6 +67,32 @@ label {
   transition: background 0.2s ease;
 }
 
+/* Category */
+.category {
+  margin-bottom: 20px;
+}
+
+.category h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.category h3:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.category.collapsed .defects {
+  display: none;
+}
+
 /* Checkbox */
 input[type="checkbox"] {
   transform: scale(1.2);
