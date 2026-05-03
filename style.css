@@ -42,6 +42,23 @@ input[type="text"] {
   text-transform: capitalize;
 }
 
+textarea {
+  width: 100%;
+  padding: 14px 12px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.05),
+    0 6px 16px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+  resize: vertical;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", monospace;
+}
+
 /* Focus effect */
 input[type="text"]:focus {
   box-shadow:
@@ -167,13 +184,32 @@ button:active {
 }
 
 /* ===== OUTPUT ===== */
-pre {
+textarea#output {
   margin: 16px 10px;
   padding: 16px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 200px;
+  resize: vertical;
+  overflow-y: auto;
+  color: #1c1c1e;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+textarea#output:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 2px rgba(0,122,255,0.25),
+    0 8px 32px rgba(0,0,0,0.12);
+}
   border: 1px solid rgba(255,255,255,0.6);
   box-shadow:
     0 8px 20px rgba(0,0,0,0.08),

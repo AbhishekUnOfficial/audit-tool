@@ -8,7 +8,7 @@ let observation = new Set(
 let collapsed = new Set(JSON.parse(localStorage.getItem("collapsed") || "[]"));
 
 async function loadData() {
-  const files = ['Civil.json', 'Electrical.json', 'Tower.json', 'Earthing.json', 'Fence.json', 'Shelter.json', 'ODBed.json', 'ProjectManagement.json', 'Addendum.json'];
+  const files = ['Civil.json', 'Electrical.json', 'Tower.json', 'Earthing.json', 'Fence.json', 'Shelter.json', 'ODBed.json', 'ProjectManagement.json'];
   for (let file of files) {
     try {
       const response = await fetch(file);
@@ -61,9 +61,9 @@ function render(dataObj) {
 
       let displayText;
       if (item["Severity"]) {
-        displayText = `<strong>${defectCode}:</strong> ${item["Classification of Defects"]} (${item["Severity"]})`;
+        displayText = `(${defectCode}) ${item["Classification of Defects"]} (${item["Severity"]})`;
       } else {
-        displayText = `<strong>${defectCode}:</strong> ${item["Check-point"]} - ${item["Description"]}`;
+        displayText = `(${defectCode}) ${item["Check-point"]} - ${item["Description"]}`;
       }
 
       label.innerHTML = `
@@ -171,7 +171,8 @@ function generate() {
   let date = new Date().toLocaleDateString("en-GB");
   let output = "Date :- " + date + "\n";
   output += "Site ID :- " + (siteId.value || "") + "\n";
-  output += "Site Name :- " + (siteName.value || "") + "\n\n";
+  output += "Site Name :- " + (siteName.value || "") + "\n";
+  output += "Notes :- " + (notes.value || "") + "\n\n";
 
   let punchList = [];
   let rectifiedList = [];

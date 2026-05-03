@@ -12,17 +12,47 @@
         },
         {
             "Defect Code": "ELEC-03",
-            "Classification of Defects": "Cable: 1) Make, 2) Size, 3) Grade, 4) St. Compliance",
+            "Classification of Defects": "Cable - Make (Not as per indus guideline)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-03",
+            "Classification of Defects": "Cable - Size (Not as per indus guideline)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-03",
+            "Classification of Defects": "Cable - Grade (Not as per indus guideline)",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-04",
-            "Classification of Defects": "Cable termination : 1) Terminals without lugs, 2) Terminals lug crimping, 3) Terminals without Heat shrink sleeves, 4) Terminals tightness",
+            "Classification of Defects": "Cable termination - Terminals without lugs installed",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-04",
+            "Classification of Defects": "Cable termination - Terminals lug crimping not done",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-04",
+            "Classification of Defects": "Cable termination - Terminals without Heat shrink sleeves installed",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-04",
+            "Classification of Defects": "Cable termination - Terminals tightness pending",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-05",
-            "Classification of Defects": "Cable Routings :1)Underground trench depth 600mm, 2) Cable routing protections-HDPE pipe/flexible pipe",
+            "Classification of Defects": "Cable Routings - Underground trench depth less than 600mm, 2) Cable routing protections-HDPE pipe/flexible pipe",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-05",
+            "Classification of Defects": "Cable Routings - Cable routing protections-HDPE pipe/flexible pipe not provided",
             "Severity": "Major"
         },
         {
@@ -72,7 +102,27 @@
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "OEM Comm report not available: 1) BB, 2) SMPS, 3) SPS, 4) DG, 5) AC",
+            "Classification of Defects": "BB Comm report not provided by TSP",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-15",
+            "Classification of Defects": "SMPS Comm report not provided by TSP",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-15",
+            "Classification of Defects": "SPS Comm report not provided by TSP",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-15",
+            "Classification of Defects": "DG Comm report not provided by TSP",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-15",
+            "Classification of Defects": "AC Comm report not provided by TSP",
             "Severity": "Critical"
         },
         {
@@ -82,7 +132,17 @@
         },
         {
             "Defect Code": "ELEC-17",
-            "Classification of Defects": "MCCB: 1) Make,2) Ratings, 3) St. Compliance, 4)Spreader link for MCCB",
+            "Classification of Defects": "MCCB: Ratings not as per indus guideline",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-17",
+            "Classification of Defects": "MCCB: Spreader link for MCCB not provided for EB MCCB",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-17",
+            "Classification of Defects": "MCCB: Spreader link for MCCB not provided for SPD MCCB",
             "Severity": "Critical"
         },
         {
@@ -98,6 +158,21 @@
         {
             "Defect Code": "ELEC-20",
             "Classification of Defects": "Equipment functionality- 1) No Output, 2) Display not working, 3) Indications not working (OEM)",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-20",
+            "Classification of Defects": "SP Indications not working",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-20",
+            "Classification of Defects": "SPS Display not working",
+            "Severity": "Critical"
+        },
+        {
+            "Defect Code": "ELEC-20",
+            "Classification of Defects": "SMPS Display not working",
             "Severity": "Critical"
         },
         {
@@ -121,8 +196,13 @@
             "Severity": "Critical"
         },
         {
+            "Defect Code": "ELEC-24",
+            "Classification of Defects": "Parameter settings in SMPS wrong",
+            "Severity": "Critical"
+        },
+        {
             "Defect Code": "ELEC-25",
-            "Classification of Defects": "Class B/Class B+C SPD installation",
+            "Classification of Defects": "Class B/Class B+C SPD installation pending",
             "Severity": "Critical"
         },
         {
@@ -137,7 +217,7 @@
         },
         {
             "Defect Code": "ELEC-28",
-            "Classification of Defects": "Power socket installed as per location and IP rating",
+            "Classification of Defects": "Power socket not installed",
             "Severity": "Major"
         },
         {
@@ -156,8 +236,13 @@
             "Severity": "Major"
         },
         {
+            "Defect Code": "ELEC-31",
+            "Classification of Defects": "Cable tray installation: not as par layout",
+            "Severity": "Major"
+        },
+        {
             "Defect Code": "ELEC-32",
-            "Classification of Defects": "Equipment mounting poles grouting: 1) SP/SPS poles, 2) SM Pole",
+            "Classification of Defects": "Poles grouting not done",
             "Severity": "Major"
         },
         {
@@ -197,22 +282,42 @@
         },
         {
             "Defect Code": "ELEC-40",
-            "Classification of Defects": "Earth strip joints: 1) Welding not proper, 2) Nut-bolts not used, 3) Overlapping not as per specification, 4) Loose nut-bolts",
+            "Classification of Defects": "Earth strip joints: Welding not proper",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-40",
+            "Classification of Defects": "Earth strip joints: Nut-bolts not used",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-40",
+            "Classification of Defects": "Earth strip joints: Overlapping not as per specification",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-40",
+            "Classification of Defects": "Earth strip joints: Loose nut-bolts found",
             "Severity": "Major"
         },
         {
             "Defect Code": "ELEC-41",
-            "Classification of Defects": "GI strip routings:1) Underground trench of 600mm, 2) Surface routing using SS saddle",
+            "Classification of Defects": "GI strip routings: Underground trench less than 600mm",
+            "Severity": "Major"
+        },
+        {
+            "Defect Code": "ELEC-41",
+            "Classification of Defects": "GI strip routings: SS saddle not used for surface routing",
             "Severity": "Major"
         },
         {
             "Defect Code": "ELEC-42",
-            "Classification of Defects": "LA GI strip routing using insulator (RTT,GBT,GBM)",
+            "Classification of Defects": "LA GI strip routing using insulator not installed",
             "Severity": "Major"
         },
         {
             "Defect Code": "ELEC-43",
-            "Classification of Defects": "Equipment mounting poles grounding: 1) SP/SPS poles, 2) SM Pole, 3) LT EB poles, 4) Earthing using 25x3mm GI strip",
+            "Classification of Defects": "Equipment mounting poles earthing using 25x3mm GI strip not done yet",
             "Severity": "Critical"
         }
     ]
