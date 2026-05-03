@@ -47,7 +47,7 @@
         },
         {
             "Defect Code": "ELEC-05",
-            "Classification of Defects": "Cable Routings - Underground trench depth less than 600mm, 2) Cable routing protections-HDPE pipe/flexible pipe",
+            "Classification of Defects": "Cable Routings - Underground trench depth found less than 600mm",
             "Severity": "Major"
         },
         {
@@ -102,27 +102,27 @@
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "BB Comm report not provided by TSP",
+            "Classification of Defects": "BB commissioning report not provided by TSP",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "SMPS Comm report not provided by TSP",
+            "Classification of Defects": "SMPS commissioning report not provided by TSP",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "SPS Comm report not provided by TSP",
+            "Classification of Defects": "SPS commissioning report not provided by TSP",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "DG Comm report not provided by TSP",
+            "Classification of Defects": "DG commissioning report not provided by TSP",
             "Severity": "Critical"
         },
         {
             "Defect Code": "ELEC-15",
-            "Classification of Defects": "AC Comm report not provided by TSP",
+            "Classification of Defects": "AC commissioning report not provided by TSP",
             "Severity": "Critical"
         },
         {

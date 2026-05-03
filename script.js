@@ -1,4 +1,16 @@
 const data = {};
+const siteId = document.getElementById("siteId");
+const siteName = document.getElementById("siteName");
+const notes = document.getElementById("notes");
+const outputEl = document.getElementById("output");
+
+function getItemId(category, item) {
+  const defectCode = item["Defect Code"] || "";
+  const description = item["Severity"]
+    ? item["Classification of Defects"]
+    : item["Check-point"] || item["Description"] || "";
+  return `${category}||${defectCode}||${description}`;
+}
 
 let selected = new Set(JSON.parse(localStorage.getItem("selected") || "[]"));
 let rectified = new Set(JSON.parse(localStorage.getItem("rectified") || "[]"));
@@ -51,11 +63,12 @@ function render(dataObj) {
     dataObj[category].forEach((item) => {
       let label = document.createElement("label");
       let defectCode = item["Defect Code"];
+      let itemId = getItemId(category, item);
 
       let statusClass = "";
-      if (selected.has(defectCode)) statusClass = "status-punch";
-      else if (rectified.has(defectCode)) statusClass = "status-rectified";
-      else if (observation.has(defectCode)) statusClass = "status-observation";
+      if (selected.has(itemId)) statusClass = "status-punch";
+      else if (rectified.has(itemId)) statusClass = "status-rectified";
+      else if (observation.has(itemId)) statusClass = "status-observation";
 
       label.className = statusClass;
 
@@ -67,9 +80,9 @@ function render(dataObj) {
       }
 
       label.innerHTML = `
-        <input type="checkbox" class="main" ${selected.has(defectCode) ? "checked" : ""}>
-        <input type="checkbox" class="rect" ${rectified.has(defectCode) ? "checked" : ""}>
-        <input type="checkbox" class="obs" ${observation.has(defectCode) ? "checked" : ""}>
+        <input type="checkbox" class="main" ${selected.has(itemId) ? "checked" : ""}>
+        <input type="checkbox" class="rect" ${rectified.has(itemId) ? "checked" : ""}>
+        <input type="checkbox" class="obs" ${observation.has(itemId) ? "checked" : ""}>
         ${displayText}
       `;
 
@@ -80,16 +93,16 @@ function render(dataObj) {
       // Punch checkbox
       main.addEventListener("change", () => {
         if (main.checked) {
-          selected.add(defectCode);
+          selected.add(itemId);
 
-          rectified.delete(defectCode);
-          observation.delete(defectCode);
+          rectified.delete(itemId);
+          observation.delete(itemId);
 
           rect.checked = false;
           obs.checked = false;
           label.className = "status-punch";
         } else {
-          selected.delete(defectCode);
+          selected.delete(itemId);
           label.className = "";
         }
         save();
@@ -98,16 +111,16 @@ function render(dataObj) {
       // Rectified checkbox
       rect.addEventListener("change", () => {
         if (rect.checked) {
-          rectified.add(defectCode);
+          rectified.add(itemId);
 
-          selected.delete(defectCode);
-          observation.delete(defectCode);
+          selected.delete(itemId);
+          observation.delete(itemId);
 
           main.checked = false;
           obs.checked = false;
           label.className = "status-rectified";
         } else {
-          rectified.delete(defectCode);
+          rectified.delete(itemId);
           label.className = "";
         }
         save();
@@ -116,16 +129,16 @@ function render(dataObj) {
       // Observation checkbox
       obs.addEventListener("change", () => {
         if (obs.checked) {
-          observation.add(defectCode);
+          observation.add(itemId);
 
-          selected.delete(defectCode);
-          rectified.delete(defectCode);
+          selected.delete(itemId);
+          rectified.delete(itemId);
 
           main.checked = false;
           rect.checked = false;
           label.className = "status-observation";
         } else {
-          observation.delete(defectCode);
+          observation.delete(itemId);
           label.className = "";
         }
         save();
@@ -157,11 +170,13 @@ function save() {
   localStorage.setItem("collapsed", JSON.stringify([...collapsed]));
   localStorage.setItem("siteId", siteId.value);
   localStorage.setItem("siteName", siteName.value);
+  localStorage.setItem("notes", notes.value);
 }
 
 window.onload = () => {
   siteId.value = localStorage.getItem("siteId") || "";
   siteName.value = localStorage.getItem("siteName") || "";
+  notes.value = localStorage.getItem("notes") || "";
   loadData();
 };
 
@@ -181,15 +196,16 @@ function generate() {
   for (let category in data) {
     data[category].forEach(item => {
       let defectCode = item["Defect Code"];
+      let itemId = getItemId(category, item);
       let desc = item["Severity"] ? item["Classification of Defects"] : item["Check-point"];
 
-      if (selected.has(defectCode)) {
+      if (selected.has(itemId)) {
         punchList.push(`(${defectCode}) ${desc}`);
       }
-      if (rectified.has(defectCode)) {
+      if (rectified.has(itemId)) {
         rectifiedList.push(`(${defectCode}) ${desc}`);
       }
-      if (observation.has(defectCode)) {
+      if (observation.has(itemId)) {
         observationList.push(`(${defectCode}) ${desc}`);
       }
     });
@@ -210,12 +226,12 @@ function generate() {
     observationList.forEach((x, i) => (output += i + 1 + ". " + x + "\n"));
   }
 
-  document.getElementById("output").textContent = output;
-  document.getElementById("output").scrollIntoView({ behavior: "smooth" });
+  outputEl.textContent = output;
+  outputEl.scrollIntoView({ behavior: "smooth" });
 }
 
 function copyText() {
-  let text = document.getElementById("output").textContent;
+  let text = outputEl.textContent;
   navigator.clipboard.writeText(text);
   alert("Copied");
 }
